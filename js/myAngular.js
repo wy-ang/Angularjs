@@ -12,9 +12,9 @@ app.controller('controller3',function($scope,$http){
 	$http.get("Customers_JSON.json").success(function(response){$scope.names = response});
 })
 
-app.controller('myShow',function($scope){
+/*app.controller('myShow',function($scope){
 	$scope.myVie = true;
 	$scope.toggle = function(){
 		$scope.myVie = !$scope.myVie;
 	}
-})
+})*/
