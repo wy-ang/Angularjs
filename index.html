@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myController">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular</title>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/myAngular.js"></script>
+</head>
+<body>
+	<div ng-controller="controller1">
+		<input type="number" ng-model="a"/>
+		<input type="number" ng-model="b"/>
+		<p>总价：{{ a * b }}</p>
+	</div>
+	<ul ng-controller="controller2">
+		<li ng-repeat="x in list">
+			{{ x.nameX }}
+		</li>
+	</ul>
+	<div ng-controller="customersController" ng-repeat="n in names">
+		{{ n.Name + ', ' + n.Country }}
+	</div>
+	<div>
+		<input type="text" ng-model="get.text" />
+		<p>{{get.text}},angular</p>
+	</div>
+	<div>
+		姓名：<input type="text" ng-model="name">
+		<p ng-bind="name"></p>
+	</div>
+	<div ng-controller="myShow">
+		<button ng-click='toggle()'>显示/隐藏</button>
+		<p class="len" ng-show="myVie">我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我
+		</p>
+	</div>
+	<script>
+	console.log($('p.len').text().length);
+	</script>
+</html>
