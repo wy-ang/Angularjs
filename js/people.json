@@ -1,0 +1,14 @@
+{
+    "people": [
+        {
+            "name": "zhangsan",
+            "city": "beijing",
+            "country": "china"
+        },
+        {
+            "name": "lisi",
+            "city": "shanghai",
+            "country": "china"
+        }
+    ]
+}

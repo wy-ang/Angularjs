@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoList">
+<head>
+	<meta charset="UTF-8">
+	<title>list</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="padding:100px;">
+	<!-- <div ng-controller="task">
+		<div class="input-group" style="width:300px;">
+			<input type="text" class="form-control" ng-model="date">
+			<span class="input-group-btn">
+				<button class="btn btn-default" ng-click="add()">提交</button>
+			</span>
+		</div>
+		<h4 ng-if="arr.length>0">清单</h4>
+		<ul class="list-group" style="width:300px;">
+			<li class="list-group-item" ng-repeat="item in arr track by $index">
+				{{ item }}
+				<a href="javascript:;" ng-click="arr.splice($index,1)">删除</a>
+			</li>
+		</ul>
+	</div> -->
+	<!-- search: <input type="text" ng-model="query" />
+	<div ng-controller="myJson">
+		<ul>
+			<li ng-repeat="item in arrList track by $index | filter:query">{{ item }}</li>
+		</ul>
+	</div> -->
+		<input type='text' ng-model='color' placeholder='Enter a color' / >
+		<hello-world style="hehe"></hello-world>{{ style }}
+
+<script src="js/angular.min.js"></script>
+<script src="js/todolist.js"></script>
+</body>
+</html>
